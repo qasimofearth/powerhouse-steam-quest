@@ -19,8 +19,9 @@ interface Props {
 // inputs are needed for full output; fuel-only gives just a tiny backup trickle.
 
 const rand = (a: number, b: number) => a + Math.random() * (b - a);
-const IN_X = -4.2;
-const OUT_X = 2.0;
+const MITO_X = -0.9;       // mitochondrion sits left of center…
+const IN_X = -4.6;         // inputs stream in from the far left
+const OUT_X = MITO_X + 1.7; // …so ATP can stream OUT into open space on the right
 
 interface Shared {
   fuel: boolean;
@@ -84,6 +85,7 @@ const Mito: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ shared }) 
 const Particles: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ shared }) => {
   const ins = useRef<THREE.InstancedMesh>(null);
   const outs = useRef<THREE.InstancedMesh>(null);
+  const atpGlow = useRef<THREE.InstancedMesh>(null);
   const dummy = useMemo(() => new THREE.Object3D(), []);
   const NIN = 60, NOUT = 40;
 
@@ -101,12 +103,12 @@ const Particles: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ share
     const lvl = S.level;
 
     // emit ATP + waste from the matrix
-    S.atpAccum += lvl * 9 * dt;
+    S.atpAccum += lvl * 5 * dt;
     while (S.atpAccum >= 1) {
       S.atpAccum -= 1;
       S.atp++;
-      S.outs.push({ x: OUT_X, y: rand(-0.4, 0.4), z: rand(-0.4, 0.4), life: 1, t: 0 });
-      if (lvl > 0.4 && Math.random() < 0.5) S.outs.push({ x: OUT_X, y: rand(-0.6, 0.6), z: rand(-0.5, 0.5), life: 1, t: Math.random() < 0.5 ? 1 : 2 });
+      S.outs.push({ x: OUT_X, y: rand(-0.7, 0.7), z: rand(-0.5, 0.5), life: 1, t: 0 });
+      if (lvl > 0.4 && Math.random() < 0.4) S.outs.push({ x: OUT_X, y: rand(-0.8, 0.8), z: rand(-0.5, 0.5), life: 1, t: Math.random() < 0.5 ? 1 : 2 });
     }
 
     // inputs flow toward the mitochondrion (only the active kinds move)
@@ -115,7 +117,7 @@ const Particles: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ share
       const active = p.k === 0 ? S.fuel : S.oxy && S.fuel;
       if (active) {
         p.x += (2.2 + lvl) * dt;
-        if (p.x > -0.4) { p.x = rand(IN_X - 1.5, IN_X); p.y = rand(-1, 1); p.z = rand(-0.8, 0.8); }
+        if (p.x > MITO_X) { p.x = rand(IN_X - 1.5, IN_X); p.y = rand(-1, 1); p.z = rand(-0.8, 0.8); }
       }
       dummy.position.set(p.x, p.y, p.z);
       dummy.scale.setScalar(active ? (p.k === 0 ? 0.14 : 0.1) : 0.0001);
@@ -125,25 +127,34 @@ const Particles: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ share
     });
     if (ii) { ii.instanceMatrix.needsUpdate = true; if (ii.instanceColor) ii.instanceColor.needsUpdate = true; }
 
-    // outputs drift right and fade
+    // outputs drift right and fade — kept slow + short so they stay on-screen
+    // in the open space to the right of the mitochondrion
     for (let i = S.outs.length - 1; i >= 0; i--) {
       const o = S.outs[i];
-      o.x += (1.6 + (1 - o.life)) * dt;
-      o.life -= dt * 0.6;
-      if (o.life <= 0) S.outs.splice(i, 1);
+      o.x += 1.5 * dt;
+      o.y += (o.t === 0 ? 0 : Math.sin(o.x * 3) * 0.4 * dt);
+      o.life -= dt * 0.45;
+      if (o.x > 4 || o.life <= 0) S.outs.splice(i, 1);
     }
-    const oi = outs.current;
+    const oi = outs.current, gi = atpGlow.current;
     if (oi) {
       for (let i = 0; i < NOUT; i++) {
         const o = S.outs[i];
         if (o) {
           dummy.position.set(o.x, o.y, o.z);
-          dummy.scale.setScalar(o.t === 0 ? 0.2 : 0.09);
+          dummy.scale.setScalar(o.t === 0 ? 0.34 : 0.12);
           dummy.updateMatrix(); oi.setMatrixAt(i, dummy.matrix);
           oi.setColorAt(i, o.t === 0 ? new THREE.Color('#ffd166') : new THREE.Color('#c8cdd2'));
         } else { dummy.position.set(0, -999, 0); dummy.scale.setScalar(0.0001); dummy.updateMatrix(); oi.setMatrixAt(i, dummy.matrix); }
+        // additive glow only for ATP tokens
+        if (gi) {
+          if (o && o.t === 0) { dummy.position.set(o.x, o.y, o.z); dummy.scale.setScalar(0.6); }
+          else { dummy.position.set(0, -999, 0); dummy.scale.setScalar(0.0001); }
+          dummy.updateMatrix(); gi.setMatrixAt(i, dummy.matrix);
+        }
       }
       oi.instanceMatrix.needsUpdate = true; if (oi.instanceColor) oi.instanceColor.needsUpdate = true;
+      if (gi) gi.instanceMatrix.needsUpdate = true;
     }
   });
 
@@ -153,9 +164,15 @@ const Particles: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ share
         <sphereGeometry args={[1, 10, 10]} />
         <meshStandardMaterial emissive="#ffffff" emissiveIntensity={0.4} roughness={0.4} toneMapped={false} />
       </instancedMesh>
-      <instancedMesh ref={outs} args={[undefined, undefined, NOUT]}>
-        <boxGeometry args={[1, 0.6, 0.4]} />
-        <meshStandardMaterial emissive="#a87a00" emissiveIntensity={0.5} roughness={0.4} toneMapped={false} />
+      {/* ATP glow halo */}
+      <instancedMesh ref={atpGlow} args={[undefined, undefined, NOUT]} frustumCulled={false}>
+        <sphereGeometry args={[1, 12, 12]} />
+        <meshBasicMaterial color="#ffe08a" transparent opacity={0.45} blending={THREE.AdditiveBlending} depthWrite={false} toneMapped={false} />
+      </instancedMesh>
+      {/* ATP tokens + waste */}
+      <instancedMesh ref={outs} args={[undefined, undefined, NOUT]} frustumCulled={false}>
+        <boxGeometry args={[1.3, 0.7, 0.4]} />
+        <meshStandardMaterial color="#ffd166" emissive="#ffb300" emissiveIntensity={1.4} roughness={0.3} toneMapped={false} />
       </instancedMesh>
     </>
   );
@@ -171,10 +188,12 @@ const Scene: React.FC<{ shared: React.MutableRefObject<Shared> }> = ({ shared })
     <directionalLight position={[4, 6, 5]} intensity={1.3} />
     <directionalLight position={[-4, 2, -3]} intensity={0.5} color="#7fb0ff" />
     <pointLight position={[0, 0, 4]} intensity={0.7} />
-    <Mito shared={shared} />
+    <group position={[MITO_X, 0, 0]}>
+      <Mito shared={shared} />
+    </group>
     <Particles shared={shared} />
-    <Html position={[IN_X + 0.4, 1.5, 0]} center style={{ pointerEvents: 'none' }}><Tag color="#e7c869">IN: glucose + oxygen</Tag></Html>
-    <Html position={[OUT_X + 1.3, 1.4, 0]} center style={{ pointerEvents: 'none' }}><Tag color="#ffd166">OUT: ATP + waste</Tag></Html>
+    <Html position={[IN_X + 0.6, 1.6, 0]} center style={{ pointerEvents: 'none' }}><Tag color="#e7c869">IN: glucose + oxygen</Tag></Html>
+    <Html position={[OUT_X + 1.6, 1.6, 0]} center style={{ pointerEvents: 'none' }}><Tag color="#ffd166">OUT: ATP + waste</Tag></Html>
     <OrbitControls enablePan={false} minDistance={5} maxDistance={12} enableDamping dampingFactor={0.08} />
   </>
 );
@@ -188,7 +207,7 @@ const RespirationBuilder: React.FC<Props> = ({ onInteraction }) => {
   const [hud, setHud] = useState({ atp: 0, rate: 0 });
 
   React.useEffect(() => {
-    const id = setInterval(() => setHud({ atp: shared.current.atp, rate: Math.round(shared.current.level * 100) }), 160);
+    const id = setInterval(() => setHud({ atp: shared.current.atp, rate: Math.round(shared.current.level * 100) }), 200);
     return () => clearInterval(id);
   }, []);
 
