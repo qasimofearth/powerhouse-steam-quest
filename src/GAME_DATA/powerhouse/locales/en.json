@@ -1,0 +1,251 @@
+{
+  "dialog": {
+    "button": {
+      "next": "Next →",
+      "back": "← Back",
+      "submit": "Submit",
+      "correct": "Correct ✓",
+      "try-again": "Try again",
+      "start_again": "↺ Play Again"
+    }
+  },
+  "start": {
+    "title": "<h1 style='font-size: 34px; line-height: 44px; font-weight: 800; margin:0;'>Powerhouse</h1><h2 style='font-size: 20px; line-height: 30px; font-weight: 700; margin-top:6px;'>The Engine Inside Every Athlete</h2>",
+    "description": "<div style='font-size: 19px; line-height: 29px; font-weight: 500;'><strong>Cold plunges. $80 supplements. Breathing hacks. Miracle pills.</strong> Mei's feed won't stop screaming one promise: <em>“Boost your mitochondria!”</em> — the supposed secret to superhuman energy. Mei's not buying it. Should she? Some of this is real science. Some is pure hype. Your job is to tell them apart — and sports scientist Dr. Vega is starting you where the truth actually lives: <strong>inside a single living cell.</strong></div>",
+    "start_game": "Start STEAMQuest"
+  },
+  "scenesList": {
+    "scene_1": "Title Screen",
+    "scene_2": "Mitochondria Hype?",
+    "scene_3": "Meet the Mitochondrion",
+    "scene_4": "Check: The Folds",
+    "scene_4b": "Check: How Many",
+    "scene_5": "Fuel and Air",
+    "scene_6": "The Molecular Turbine",
+    "scene_7": "Check: The Turbine",
+    "scene_8": "Why You Gasp",
+    "scene_9": "Check: The Burn",
+    "scene_10": "VO₂max: Your High Score",
+    "scene_11": "The VO₂max Lab",
+    "scene_12": "Check: VO₂max",
+    "scene_13": "What Actually Works",
+    "scene_14": "The Optimization Lab",
+    "scene_15": "Check: Training",
+    "scene_15b": "Check: What's Real",
+    "scene_16": "Running Hot",
+    "scene_17": "Check: Heat",
+    "scene_18": "Inherited From Mom",
+    "scene_19": "Check: Inheritance",
+    "scene_20": "Ancient Stowaways",
+    "scene_21": "Check: Endosymbiosis",
+    "scene_22": "The Commute",
+    "scene_23": "Check: Neurons",
+    "scene_24": "The Verdict",
+    "scene_25": "Race Day",
+    "scene_26": "End Screen"
+  },
+  "scenes": {
+    "common": {
+      "maya": "Mei",
+      "dro": "Dr. Vega",
+      "maya_description": "Mei, 19, college track runner in training gear with a fitness watch",
+      "dro_description": "Dr. Vega, exercise physiologist, warm and sharp",
+      "bg_lab_description": "A bright sports-science lab with treadmills and screens",
+      "bg_track_description": "An outdoor running track at golden hour",
+      "bg_cell_description": "The glowing interior of a living cell",
+      "enter_answer": "Choose your answer"
+    },
+    "ui": {
+      "explorer": "Mitochondrion Explorer",
+      "turbine": "ATP Synthase — The Turbine",
+      "vo2": "VO₂max Treadmill Test",
+      "training": "Training Lab",
+      "brownfat": "Brown Fat Furnace",
+      "maternal": "Your Maternal Line",
+      "endo": "Endosymbiosis Detective",
+      "axon": "The Neuron Delivery Run",
+      "respiration": "Build the Energy Line",
+      "sprint": "Sprint Intensity"
+    },
+    "s2": {
+      "d1": "Thanks for fitting in my VO₂max test, Dr. Vega. Can I ask you something first, though? My whole feed is this stuff — <strong>“boost your mitochondria”</strong> — cold plunges, eighty-dollar supplements, special breathing. Everyone swears it makes them unstoppable. Is ANY of it real?<div style='display:flex;justify-content:center;margin:8px 0;'><img src='/assets/images/hype-feed.svg' alt='Phone feed endlessly scrolling viral mitochondria-boost ads' style='height:auto;width:auto;max-height:46vh;max-width:215px;'/></div>",
+      "d2": "Honestly? It's a mix of real science and total hype. But here's the exciting part: yes — you genuinely CAN improve your mitochondria. Athletes do it all the time. Most of what's trending online, though, is exaggerated or flat-out unproven.",
+      "d3": "So how do I tell what actually works from what's just marketing?",
+      "d4": "Same way a scientist does. First understand what mitochondria ARE.<div style='margin:12px 0;padding:11px 14px;border-left:4px solid #0E7C86;background:rgba(14,124,134,0.10);border-radius:6px;'><span style='display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;color:#0E7C86;text-transform:uppercase;'>Vocabulary</span><br/><strong>Mitochondria</strong> <span style='color:#667;'>(my-toh-KON-dree-uh)</span> — tiny <strong>engines</strong> inside almost every cell that turn food and oxygen into usable energy (ATP). One cell can hold hundreds to thousands of them. <em>Singular: mitochondrion.</em></div>Once you get how they work, the real upgrades become obvious... and the snake oil gets easy to spot. Here — I'll pull one up on the lab's 3D viewer."
+    },
+    "s3": {
+      "d1": "This is a 3D scan of one of your muscle cells, zoomed right in. That bean-shaped structure is a single <strong>mitochondrion</strong> — and this one cell is packed with a couple <strong>thousand</strong> of them. Spin it with your finger, and tap each part to see what it does.",
+      "d2": "Notice the inside is folded into deep ridges — those are the <strong>cristae</strong>. Folding the inner wall like a scrunched-up bedsheet crams a huge surface into a tiny space.<div style='display:flex;flex-direction:column;align-items:center;margin:12px 0;'><img src='/assets/images/mito-diagram.webp' alt='Labeled cutaway of a mitochondrion' style='width:100%;max-width:330px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,0.25);'/><div style='font-size:11px;opacity:0.6;margin-top:4px;text-align:center;'>A real labeled cutaway — see the folded cristae inside. Public domain, via Wikimedia Commons</div></div>",
+      "d3": "More surface means more room for the machinery that makes energy. Cells that need lots of power — heart and muscle — are absolutely crammed with these folds.",
+      "d4": "Here's the staggering part: this is just ONE. A single muscle cell holds roughly <strong>1,000 to 2,000</strong> mitochondria, and your whole body has around <strong>ten quadrillion</strong> — close to a tenth of your body weight. You are, by the kilogram, part power-plant.",
+      "m1": "Ten quadrillion? That's... inside me, right now?"
+    },
+    "q4": {
+      "heading": "Check Your Understanding",
+      "stem": "Why is the inner membrane folded into so many ridges (cristae)?",
+      "a": "To pack in more surface for the energy machinery",
+      "b": "To store fuel reserves for the muscle",
+      "c": "To hold the cell's main supply of DNA",
+      "d": "To let more oxygen leak into the cell"
+    },
+    "s5": {
+      "d1": "So how does an engine like this actually run? Two things go in: <strong>fuel</strong> from your food (a sugar called glucose) and <strong>oxygen</strong> from the air you breathe.",
+      "d2": "The mitochondrion combines them in a few steps and charges up the body's rechargeable battery — a molecule called <strong>ATP</strong>. Think of ATP as energy cash your cells can spend instantly.",
+      "d3": "What's left over? Just water, and the carbon dioxide you breathe out. Now — let me show you the most jaw-dropping part of the whole machine."
+    },
+    "s6": {
+      "d1": "This is <strong>ATP synthase</strong>. It's a real, spinning motor — one of the only rotary engines in all of biology, and you have trillions of them.",
+      "d2": "Here's the trick. The mitochondrion pumps tiny particles called protons to one side of the inner wall, piling them up like <strong>water behind a dam.</strong>",
+      "d3": "When the protons rush back through this motor, they spin it — around 130 turns every second — and each turn snaps out fresh ATP batteries. Pump the gradient, then let it flow and watch.",
+      "d4": "Now cut the oxygen. See what happens? The dam drains, the turbine stalls, and ATP production crashes. Hold that thought — it explains everything about that wall you hit at the end of a race.",
+      "m1": "Hold on — an actual motor that physically spins? In my cells?"
+    },
+    "q7": {
+      "heading": "Check Your Understanding",
+      "stem": "What makes the ATP synthase motor spin?",
+      "a": "A flow of protons rushing back through it",
+      "b": "A surge of glucose entering the cell",
+      "c": "Oxygen pushing in from the bloodstream",
+      "d": "The cell's electrical charge flipping"
+    },
+    "s8": {
+      "d1": "Remember the stalled turbine? Oxygen is the very last step of the whole energy line — think of it as <strong>the drain at the end of the pipe.</strong> It carries away the leftovers so the line keeps flowing.",
+      "d2": "When you sprint all-out, your muscles burn oxygen faster than your lungs can deliver it. The drain clogs, the turbines slow, and your cells switch to a weak backup supply.",
+      "d3": "That backup is what makes your muscles burn and your legs turn to lead. That desperate gasping at the finish line? That's billions of mitochondria screaming for air.",
+      "m1": "So that wall I hit at the end of a race is literally my mitochondria running out of air."
+    },
+    "q9": {
+      "heading": "Check Your Understanding",
+      "stem": "Why do your muscles burn and you gasp for air during an all-out sprint?",
+      "a": "Mitochondria run short on oxygen, so a backup kicks in",
+      "b": "Lactic acid builds up and damages the muscle",
+      "c": "The muscles completely run out of glucose",
+      "d": "The heart simply can't pump blood fast enough"
+    },
+    "s10": {
+      "d1": "Time to measure your engine. The headline number in my lab is <strong>VO₂max</strong> — the most oxygen your body can actually use in a minute. It's basically your engine's high score.",
+      "d2": "A couch potato scores around 35. You're around 50 — good! An elite athlete tops 80. The world record is about 97, held by a cross-country skier.<div style='display:flex;justify-content:center;margin:12px 0;'><img src='/assets/images/vo2max-bars.svg' alt='VO2max bar chart: couch potato 35, you 50, elite 80, world record 97' style='width:100%;max-width:460px;'/></div>",
+      "d3": "Why a skier? They push with their arms and legs at once — more muscle working means more engines burning oxygen. Let's run your test."
+    },
+    "s11": {
+      "d1": "Step on the treadmill. I'll ramp up the speed. Watch your oxygen use climb on the dashboard.",
+      "d2": "There — see how it rises, then flattens out even as you run harder? That ceiling is your VO₂max. You've hit the limit of how fast your engines can burn oxygen.",
+      "d3": "Tap the lab tools to see the three ways scientists measure what's happening in your muscles — a tiny needle sample, a beam of light, even an MRI scan."
+    },
+    "q12": {
+      "heading": "Check Your Understanding",
+      "stem": "VO₂max measures...",
+      "a": "The most oxygen your body can use each minute",
+      "b": "How much air your lungs can hold in total",
+      "c": "How fast your heart beats while resting",
+      "d": "How many minutes you can keep running"
+    },
+    "s13": {
+      "d1": "Now the question you walked in with: can you really improve these engines? Yes — and here's the part that's genuinely proven. You can't easily grow a bigger heart, but you absolutely can build <strong>more mitochondria.</strong>",
+      "d2": "When you train hard, your cells run low on energy. That trips a 'low-battery' alarm that flips a master switch — and the cell starts building brand-new mitochondria. It's real, measured, repeatable: scientists call it mitochondrial biogenesis.",
+      "d3": "About six weeks of real training can grow 40 to 50 percent more of them. Elite athletes carry up to 40 percent more in every muscle fiber. THIS is the upgrade that actually works — no pill required. Now let's test it against the hype.",
+      "m1": "So the training itself builds them — not a supplement, not a shortcut."
+    },
+    "s14": {
+      "d1": "Welcome to the optimization lab. Test the levers that actually matter: long endurance runs, short intense HIIT intervals, rest, and sleep. Run the weeks forward and watch your mitochondria respond.",
+      "d2": "Notice there are two winning playbooks: steady endurance, or short bursts of HIIT. Both flip the same master switch by different routes — both genuinely work.",
+      "d3": "But skip rest and sleep and your gains stall — recovery is when the building actually happens. And notice there's no 'supplement' button that beats this. Exercise is the lever that's truly backed by evidence.",
+      "m1": "Wait — so the eighty-dollar pill really does... nothing?"
+    },
+    "q15": {
+      "heading": "Check Your Understanding",
+      "stem": "What does endurance training actually do to your muscle cells?",
+      "a": "It signals them to build more mitochondria",
+      "b": "It only makes the existing ones larger",
+      "c": "It clears out mitochondria you don't need",
+      "d": "Nothing — the count is fixed at birth"
+    },
+    "s16": {
+      "d1": "Now, that cold plunge trend? Here's a case where the online hype has a real <strong>kernel of truth.</strong> Meet <strong>brown fat</strong> — a tissue packed with mitochondria that exist to make heat.<div style='display:flex;flex-direction:column;align-items:center;margin:12px 0;'><img src='/assets/images/brown-fat-cell.webp' alt='A brown fat cell packed with mitochondria' style='width:100%;max-width:330px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,0.25);'/><div style='font-size:11px;opacity:0.6;margin-top:4px;text-align:center;'>A brown-fat cell: golden fat droplets, purple mitochondria. Image: scientificanimations.com, CC BY-SA 4.0</div></div>",
+      "d2": "They flip a special switch called <strong>UCP1</strong> that opens a back door in the dam. The protons leak around the turbine — so instead of making ATP, the energy escapes as <strong>pure heat.</strong>",
+      "d3": "Slide between 'make energy' and 'make heat.' Cold really does switch this on — that part's real. But the honest verdict: it burns only modest calories and won't transform your fitness. A small true effect, massively oversold online.",
+      "m1": "Okay, so cold plunges aren't totally fake — just way oversold."
+    },
+    "q17": {
+      "heading": "Check Your Understanding",
+      "stem": "How does brown fat make heat instead of energy (ATP)?",
+      "a": "Protons leak around the turbine and escape as heat",
+      "b": "It burns fat straight into warmth, like a flame",
+      "c": "Shivering muscles around it create the heat",
+      "d": "It runs the turbine faster until it overheats"
+    },
+    "s18": {
+      "d1": "You asked if you could just buy better mitochondria. Here's how personal they actually are: you didn't buy OR build your first ones. Every single mitochondrion you started life with came pre-installed — and they carry their <strong>own DNA</strong>, a tiny separate loop, apart from the DNA in the cell's nucleus.<div style='display:flex;justify-content:center;margin:12px 0;'><img src='/assets/images/two-genomes.svg' alt='Big nuclear DNA from both parents vs tiny circular mtDNA from mom only' style='width:100%;max-width:460px;'/></div>",
+      "d2": "And you inherited every single one of yours from <strong>your mother.</strong> The egg supplies them all; the father's are destroyed after fertilization.",
+      "d3": "Follow the line back — your mom, her mom, her mom — and every human alive traces to one woman scientists nicknamed <strong>Mitochondrial Eve</strong>, about 150,000 years ago in Africa.",
+      "d4": "One myth to bust: she was NOT the only woman alive back then. Thousands of others lived too — she's just the one whose unbroken mother-to-daughter line never died out. It's why this DNA is so useful in forensics: it survives in ancient bones and a single hair.",
+      "m1": "All of mine came from my mom? Not split with my dad like everything else?"
+    },
+    "q19": {
+      "heading": "Check Your Understanding",
+      "stem": "Whose mitochondria did you inherit?",
+      "a": "Only your mother's",
+      "b": "Only your father's",
+      "c": "Half from each parent, like most DNA",
+      "d": "You build them yourself as a baby"
+    },
+    "s20": {
+      "d1": "And that own-DNA thing? It points to something wild about where mitochondria came from. Brace yourself, Mei — they were once <strong>free-living bacteria</strong>.",
+      "d2": "About two billion years ago, one cell swallowed a bacterium — and instead of digesting it, kept it alive as a permanent energy partner. That single merger may be why complex life, including you, exists at all.",
+      "d3": "A scientist named Lynn Margulis proposed this and was laughed at for years. Then the evidence piled up. Collect the clues and see for yourself.",
+      "d4": "Double wall, its own bacteria-style DNA, its own bacteria-like machinery, and it even splits in two on its own. The verdict is in: you are a partnership. Every breath you take feeds an ancient bacterium living inside you.",
+      "m1": "A bacterium. Living in me. Right now."
+    },
+    "q21": {
+      "heading": "Check Your Understanding",
+      "stem": "What's the strongest evidence that mitochondria were once bacteria?",
+      "a": "They keep their own DNA and divide on their own",
+      "b": "They can still live on their own outside a cell",
+      "c": "They look just like the cell's nucleus inside",
+      "d": "They're found only in animals, never plants"
+    },
+    "s22": {
+      "d1": "One more, because it's not just muscle that lives and dies by these engines — it's your brain. Some cells are enormous: a single nerve cell can stretch nearly a meter from your spine to your toe.<div style='display:flex;flex-direction:column;align-items:center;margin:12px 0;'><img src='/assets/images/neuron-diagram.webp' alt='Labeled neuron showing the long axon and mitochondria' style='width:100%;max-width:340px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,0.25);'/><div style='font-size:11px;opacity:0.6;margin-top:4px;text-align:center;'>A real neuron: the long axon reaches far-off synaptic terminals. Public domain, via Wikimedia Commons</div></div>",
+      "d2": "The far ends, where nerve cells talk to each other, are starving for energy. So mitochondria are <strong>shipped down the cell</strong> like cargo on rails — carried by tiny motor proteins.",
+      "d3": "Drive a mitochondrion down the nerve fiber to power a firing connection before it browns out. A calcium 'stop' signal parks it exactly where the energy is needed.",
+      "d4": "When this delivery system breaks down, the far ends starve — and that failure shows up early in diseases like Alzheimer's and Parkinson's. Your engines have to be in the right place, not just present."
+    },
+    "q23": {
+      "heading": "Check Your Understanding",
+      "stem": "Why must nerve cells actively transport mitochondria down their long fibers?",
+      "a": "The fiber is long and its far end still needs energy",
+      "b": "Mitochondria can only be made at the cell body",
+      "c": "Keeping them moving stops them overheating",
+      "d": "The brain tells them to move when you think"
+    },
+    "s24": {
+      "d1": "So here's your verdict, Mei. The real way to optimize your mitochondria? Train hard to <strong>build</strong> more engines, fuel and breathe to <strong>run</strong> them, and recover so they actually get built.",
+      "d2": "And the online stuff — cold's a small real bonus, but most of the pills and hacks are hype. The thing that actually works is... training. Which is basically free.",
+      "d3": "Now you can spot the snake oil AND you understand the machine. That's an athlete who thinks like a scientist."
+    },
+    "s25": {
+      "d1": "Race day. Mei isn't chasing a miracle hack — she trusts the training that actually built her engines, and paces so her mitochondria can keep up with the oxygen.",
+      "d2": "She crosses the line strong. No magic pill, no $80 supplement — just an athlete who figured out what really works, and put in the work."
+    },
+    "s26": {
+      "heading": "Quest Complete!",
+      "body": "<div style='font-size:18px;line-height:27px;'>You powered through <strong>Powerhouse</strong>. The verdict on \"boosting your mitochondria\": the upgrade that truly works is <strong>training</strong> (cold's a small real bonus; most pills are hype). And four wonders are running inside you right now:<br/><br/>⚡ A literal <strong>spinning motor</strong> in every cell — about 130 turns a second.<br/>🦠 Your mitochondria are <strong>domesticated bacteria</strong>, still dividing inside you.<br/>👩 You inherited them <strong>only from your mom</strong> — back to one woman 150,000 years ago.<br/>🔥 <strong>Cold can flip fat into a furnace.</strong><br/><br/>Train them. Fuel them. They're the engine inside every athlete — including you.</div>"
+    },
+    "qscale": {
+      "heading": "Check Your Understanding",
+      "stem": "About how many mitochondria are packed into a single muscle cell?",
+      "a": "Roughly one to two thousand",
+      "b": "Only a handful — five or six",
+      "c": "Just one big one",
+      "d": "Around fifty or so"
+    },
+    "qhype": {
+      "heading": "Check Your Understanding",
+      "stem": "Mei wants to actually grow more mitochondria. Which is best backed by evidence?",
+      "a": "Regular endurance or HIIT training",
+      "b": "A daily ‘mito-boost’ supplement",
+      "c": "Special deep-breathing routines",
+      "d": "Cold plunges on their own"
+    }
+  }
+}

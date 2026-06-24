@@ -1,0 +1,65 @@
+export const createStyles = (
+  backgroundColor: string,
+  width: string,
+  headingColor: string,
+  durations: { animation: number; heightTransition: number },
+  contentBackgroundColor?: string,
+) => ({
+  container: {
+    borderRadius: '0.75rem',
+    fontWeight: 500,
+    fontStyle: 'normal' as const,
+    backgroundColor,
+    width,
+    minWidth: '100%',
+    maxWidth: '100%',
+    boxShadow: '0px 1px 2px 0px rgba(0, 0, 0, 0.50)',
+    height: 'auto',
+    padding: 'clamp(1rem, 3vw, 1.875rem)',
+  },
+  heading: {
+    color: headingColor,
+    fontWeight: 700,
+  },
+  body: {
+    transitionProperty: 'height',
+    transitionDuration: `${durations.heightTransition}ms`,
+    transitionTimingFunction: 'ease-in-out',
+  },
+  full: {
+    mainContainer: {
+      borderRadius: '0',
+      fontWeight: 500,
+      fontStyle: 'normal' as const,
+      backgroundColor,
+      width,
+      minWidth: '100%',
+      maxWidth: '100%',
+      boxShadow: '0px 1px 2px 0px rgba(0, 0, 0, 0.50)',
+      height: 'inherit',
+    },
+    innerContainer: {
+      display: 'flex',
+      flexDirection: 'column' as const,
+      height: 'inherit',
+    },
+    heading: {
+      padding: 'clamp(1rem, 3vw, 1.875rem)',
+      paddingBottom: '30px',
+      borderBottom: '1px solid #E4E4E4',
+    },
+    body: {
+      height: 'inherit',
+      padding: 'clamp(1rem, 3vw, 1.875rem)',
+      paddingTop: '30px',
+      paddingBottom: '0',
+      overflow: 'auto',
+      marginBottom: '10px',
+      backgroundColor: contentBackgroundColor ?? '',
+    },
+    navigation: {
+      padding: 'clamp(1rem, 3vw, 1.875rem)',
+      paddingTop: '0',
+    },
+  },
+});

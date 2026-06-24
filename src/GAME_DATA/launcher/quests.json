@@ -1,0 +1,332 @@
+[
+  {
+    "id": "get-in-the-zone",
+    "title": "Solving Equations and Inequalities",
+    "subtitle": "Get in the Zone",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/OHr2EVORcjOL1yjE3GwDOp/%E2%8F%B1%EF%B8%8F-Get-in-the-Zone%3A-A-Sports-Science-Quest",
+    "scormPackageUrl": "https://quests.playpower.ai/get-in-the-zone/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/get-in-the-zone/"
+  },
+  {
+    "id": "skytrack-internship",
+    "title": "Linear Equations",
+    "subtitle": "SkyTrack Internship",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/7ZxHnsLqitPvcRLloaceU8/Internship-at-SkyTrack?node-id=299-8244&node-type=canvas&t=6mPcCFSHJ5tFUKrS-0",
+    "scormPackageUrl": "https://quests.playpower.ai/skytrack-internship/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/skytrack-internship/"
+  },
+  {
+    "id": "kelp-forest-defenders",
+    "title": "Linear Functions",
+    "subtitle": "Kelp Forest Defenders",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/coOciFqyd0OAAyrEdtUQNd/%F0%9F%A4%BF-Kelp-Forest-Defenders%3A-Environmental-Science?node-id=3832-3549&p=f&t=2uwl9Sd8dK5vpgl7-0",
+    "scormPackageUrl": "https://quests.playpower.ai/kelp-forest-defenders/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/kelp-forest-defenders/"
+  },
+  {
+    "id": "breakeven",
+    "title": "Systems of Linear Equations and Inequalities",
+    "subtitle": "Ecothreads: Breaking Even",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/FSvw8QDy3mCwwfLnSpriT4/Breakeven-Quest?node-id=0-1&node-type=canvas&t=mChI2PqMmoDvqDYS-0",
+    "scormPackageUrl": "https://quests.playpower.ai/breakeven/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/breakeven/"
+  },
+  {
+    "id": "pricing-dilemma",
+    "title": "Piecewise Functions",
+    "subtitle": "SkyTrack's Pricing Dilemma",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/uyX4DvqDCJpIiKI0jmqyrP/SkyTrack-Pricing-Dilemma?node-id=0-1&node-type=canvas&t=WM3ZprLkiWtgOdK1-0",
+    "scormPackageUrl": "https://quests.playpower.ai/pricing-dilemma/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/pricing-dilemma/"
+  },
+  {
+    "id": "virus",
+    "title": "Exponents and Exponential Functions",
+    "subtitle": "Outbreak",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/8j3IYUT2kOrPcTkRicX8EL/Virus-Research?node-id=0-1&node-type=canvas&t=FRb2xxBrU7hhKdzi-0",
+    "scormPackageUrl": "https://quests.playpower.ai/virus/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/virus/"
+  },
+  {
+    "id": "wind-wise",
+    "title": "Polynomials and Factoring",
+    "subtitle": "The Science Behind Wind Turbine Efficiency",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/w93e8Lf0ahokCb5m0lre5K/WindWise-%3A-Modeling-Wind-Power?node-id=49-8160&p=f&t=JChGKDULrMno4ief-0",
+    "scormPackageUrl": "https://quests.playpower.ai/wind-wise/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/wind-wise/"
+  },
+  {
+    "id": "lunar-probe-precision",
+    "title": "Quadratic Functions",
+    "subtitle": "Lunar Probe Precision",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/0r0vXLGn9ikg4t1GRiEkrs/%F0%9F%8C%96-Lunar-Probe-Precision?node-id=5880-8032&t=4j3CGxNlAvT2SGnO-0",
+    "scormPackageUrl": "https://quests.playpower.ai/lunar-probe-precision/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/lunar-probe-precision/"
+  },
+  {
+    "id": "critical-point",
+    "title": "Solving Quadratic Equations",
+    "subtitle": "The Critical Point",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/CDgfOFOAi0IpgriKhtBWnE/%F0%9F%8C%B3The-critical-point?node-id=0-1&p=f&t=9QWsPyYoWPj43JZ3-0",
+    "scormPackageUrl": "https://quests.playpower.ai/critical-point/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/critical-point/"
+  },
+  {
+    "id": "shaping-sound",
+    "title": "Working with Functions",
+    "subtitle": "Shaping Sound",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/shaping-sound/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/shaping-sound/"
+  },
+  {
+    "id": "baseball-game-plan",
+    "title": "Statistics",
+    "subtitle": "Baseball Analytics: A Game Plan for Victory",
+    "section": "Algebra1",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/LIdQFdce1CiC09sxoJ3rQ3/%F0%9F%A5%8E-Game-Plan_-Baseball-by-the-Numbers?node-id=3832-3549&p=f&t=LwXakxZdJClLDA3U-0",
+    "scormPackageUrl": "https://quests.playpower.ai/baseball-game-plan/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/baseball-game-plan/"
+  },
+  {
+    "id": "al-khwarizmi",
+    "title": "Linear Functions and Systems",
+    "subtitle": "Al-Khwarizmi's Bazaar",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/al-khwarizmi/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/al-khwarizmi/"
+  },
+  {
+    "id": "fractals",
+    "title": "Quadratic Functions and Equations",
+    "subtitle": "Fractal Forge",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/OIqMzROqCsd6961aJBCoQB/31-Fractals-in-Game-Development--Into-the-Realm-of-Imaginary-Numbers?node-id=3832-3549&t=PL8W8xtNWVbrUVMZ-1",
+    "scormPackageUrl": "https://quests.playpower.ai/fractals/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/fractals/"
+  },
+  {
+    "id": "polynomial-pirates",
+    "title": "Polynomial Functions",
+    "subtitle": "Advanced Polynomials",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/polynomial-pirates/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/polynomial-pirates/"
+  },
+  {
+    "id": "lost-hiker",
+    "title": "Rational Functions",
+    "subtitle": "Lost Hiker",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/lost-hiker/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/lost-hiker/"
+  },
+  {
+    "id": "musical-scale",
+    "title": "Building the Ultimate Synth with Mathematical Sound Design",
+    "subtitle": "Exploring Musical Scales",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/musical-scale/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/musical-scale/"
+  },
+  {
+    "id": "engineering-the-perfect-beat",
+    "title": "Exponential and Logarithmic Functions",
+    "subtitle": "Engineering the Perfect Beat",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/Ko2pOWTZg04j4PdDx6EJth/Engineering-the-Perfect-Beat",
+    "scormPackageUrl": "https://quests.playpower.ai/engineering-the-perfect-beat/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/engineering-the-perfect-beat/"
+  },
+  {
+    "id": "journey-through-waves",
+    "title": "Trigonometric Functions",
+    "subtitle": "Journey Through Waves",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/aJqvJHTa3dL4hOEucXrtm3/19-Trigonometric%3A-A-Journey-Through-Waves?node-id=3832-3549&p=f&t=H5L5sWlwHWtp7urK-0",
+    "scormPackageUrl": "https://quests.playpower.ai/journey-through-waves/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/journey-through-waves/"
+  },
+  {
+    "id": "falling-into-orbit",
+    "title": "Conic Sections",
+    "subtitle": "Starlight SpaceCamp",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/falling-into-orbit/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/falling-into-orbit/"
+  },
+  {
+    "id": "data-analysis",
+    "title": "Data Analysis and Statistics",
+    "subtitle": "Data-Driven Discoveries",
+    "section": "Algebra2",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/pYxnEdCYgpcshXtsik3OfD/18-Data-Driven-Medicine-Trial",
+    "scormPackageUrl": "https://quests.playpower.ai/data-analysis/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/data-analysis/"
+  },
+  {
+    "id": "ancient-alexandria",
+    "title": "Foundations of Geometry",
+    "subtitle": "The Perfect Circle",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/U3iHQr3k38j1BTdQ0putl2/14-Geometric-Journey-Through-Ancient-Alexandria",
+    "scormPackageUrl": "https://quests.playpower.ai/ancient-alexandria/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/ancient-alexandria/"
+  },
+  {
+    "id": "euclid-path",
+    "title": "Parallel and Perpendicular Lines",
+    "subtitle": "Understanding Line Relationships",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/euclid-path/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/euclid-path/"
+  },
+  {
+    "id": "game-geometry",
+    "title": "Transformations",
+    "subtitle": "Game Geometry",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/4Bjdini2IQs6CcdzRxsCEY/Game-Geometry%3A-Transformations-in-Game-Design",
+    "scormPackageUrl": "https://quests.playpower.ai/game-geometry/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/game-geometry/"
+  },
+  {
+    "id": "optical-illusions",
+    "title": "Triangle Congruence",
+    "subtitle": "Optical Illusions",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/vtXOXmiiTbTqSQMpj1vDD7/Optical-Illusions%3A-The-Geometry-Behind-What-We-See",
+    "scormPackageUrl": "https://quests.playpower.ai/optical-illusions/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/optical-illusions/"
+  },
+  {
+    "id": "similar-triangles",
+    "title": "Similarity",
+    "subtitle": "Leonardo's Journey with Similar Triangles",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/similar-triangles/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/similar-triangles/"
+  },
+  {
+    "id": "mathematical-architecture",
+    "title": "Quadrilaterals and Other Polygons",
+    "subtitle": "Solar Geometry",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/mathematical-architecture/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/mathematical-architecture/"
+  },
+  {
+    "id": "calculated-rescue",
+    "title": "Relationships in Triangles",
+    "subtitle": "Calculated Rescue",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/calculated-rescue/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/calculated-rescue/"
+  },
+  {
+    "id": "atacama",
+    "title": "Right Triangles and Trigonometry",
+    "subtitle": "From Earth To Stars",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/CqihUcsOn4zvl9E4WiOtUZ/Atacama-From-Earth-to-the-Stars%3A-Trigonometric-Tools-for-Astronomers?node-id=7900-14927&p=f&t=ZwdH9D1JAbpoZrIR-0",
+    "scormPackageUrl": "https://quests.playpower.ai/atacama/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/atacama/"
+  },
+  {
+    "id": "coordinate-geometry",
+    "title": "Coordinate Geometry",
+    "subtitle": "Coordinate Geometry in Archaeological Discovery",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/coordinate-geometry/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/coordinate-geometry/"
+  },
+  {
+    "id": "circles-engineering-the-depth",
+    "title": "Circles",
+    "subtitle": "Engineering the Depth of Water",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/6GalF5EghiCjKxQZIMykPA/16-Circles---Engineering-the-Depths?node-id=3832-3549&p=f&t=kp6Zw5LOlcRAyRvJ-0",
+    "scormPackageUrl": "https://quests.playpower.ai/circles-engineering-the-depth/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/circles-engineering-the-depth/"
+  },
+  {
+    "id": "forest-architect",
+    "title": "Two- and Three-Dimensional Models",
+    "subtitle": "Forest Architect",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://figma.com/file/example",
+    "scormPackageUrl": "https://quests.playpower.ai/forest-architect/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/forest-architect/"
+  },
+  {
+    "id": "inbox-under-siege",
+    "title": "Probability",
+    "subtitle": "Inbox Under Siege",
+    "section": "Geometry",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/ZNOgfmIEQuxWJrIhZXtQRb/17-Probability%3A-Inbox-Under-Siege?node-id=49-8160&p=f&t=iYNOZTB4nXv4lC1l-0",
+    "scormPackageUrl": "https://quests.playpower.ai/inbox-under-siege/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/inbox-under-siege/"
+  },
+  {
+    "id": "exponential-model",
+    "title": "Exponential Model",
+    "subtitle": "Stretching the Profits",
+    "section": "Math 2",
+    "isDisabled": false,
+    "figmaLink": "https://www.figma.com/design/",
+    "scormPackageUrl": "https://quests.playpower.ai/exponential-model/scorm/package.zip",
+    "demoLink": "https://quests.playpower.ai/exponential-model/"
+  }
+]

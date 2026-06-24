@@ -1,0 +1,37 @@
+@keyframes fadeInCustom {
+  from {
+    opacity: 0;
+    transform: translate(-20px, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.glossary-highlight {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 4px;
+  text-decoration-color: #006be0;
+  cursor: help;
+  transition: all 0.2s ease-in-out;
+}
+
+.glossary-highlight:hover {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  background-color: #006ce0b4;
+  box-shadow: 0 5px 0 #006be0;
+  color: white;
+}

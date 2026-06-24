@@ -1,0 +1,77 @@
+/* Import slider styles */
+@import './shared/slider.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: 500;
+  src: url('./assets/fonts/AvenirNext-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: 700;
+  src: url('./assets/fonts/AvenirNext-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 500;
+  src: url('./assets/fonts/Besley-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 500;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 600;
+  src: url('./assets/fonts/Besley-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 600;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 700;
+  src: url('./assets/fonts/Besley-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 700;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-BoldItalic.ttf');
+}
+
+html,
+body {
+  font-family: 'avenir-next', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 100%;
+  max-height: -webkit-fill-available;
+  overflow-x: hidden;
+
+  .app-container {
+    height: 100%;
+  }
+}
+
+@layer utilities {
+  .eq-text {
+    @apply font-besley font-medium text-[2.5rem] leading-[60px];
+  }
+}
